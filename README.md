@@ -23,7 +23,7 @@ A bash script to quickly scaffold new MCP (Model Context Protocol) server projec
 Download and run the script directly:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/scaffold-mcp-server.sh | bash -s -- my-mcp-server
+curl -fsSL https://raw.githubusercontent.com/playground/scaffold-mcp-server/main/scaffold-mcp-server.sh | bash -s -- my-mcp-server
 ```
 
 Replace `my-mcp-server` with your desired server name.
