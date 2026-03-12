@@ -18,12 +18,36 @@ A bash script to quickly scaffold new MCP (Model Context Protocol) server projec
 
 ## Installation
 
-The script is located at: `scaffold-mcp-server.sh`
+### Option 1: Quick Install with curl (Recommended)
 
-Make it executable (if not already):
+Download and run the script directly:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/scaffold-mcp-server.sh | bash -s -- my-mcp-server
+```
+
+Replace `my-mcp-server` with your desired server name.
+
+**Or download first, then run:**
+
+```bash
+# Download the script
+curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/scaffold-mcp-server.sh -o scaffold-mcp-server.sh
+
+# Make it executable
+chmod +x scaffold-mcp-server.sh
+
+# Run it
+./scaffold-mcp-server.sh my-mcp-server
+```
+
+### Option 2: Local Installation
+
+If you already have the script locally:
 
 ```bash
 chmod +x scaffold-mcp-server.sh
+./scaffold-mcp-server.sh <server-name>
 ```
 
 ## Usage
@@ -41,6 +65,14 @@ chmod +x scaffold-mcp-server.sh
 ```
 
 This will create a new directory `my-mcp-server/` with the complete project structure.
+
+### One-Line Quick Start
+
+Create and start a new MCP server in one command:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/scaffold-mcp-server.sh | bash -s -- my-mcp-server && cd my-mcp-server && npm install && cp .env.example .env && npm run dev
+```
 
 ### Server Name Requirements
 
